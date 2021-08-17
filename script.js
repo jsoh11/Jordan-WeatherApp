@@ -13,6 +13,23 @@ fetch(queryUrl)
 
 
 function getParams() {
-    
+    let searchCity = document.location.search.split('&');
 
 }
+
+
+function handleSearchFormSubmit(event) {
+    event.preventDefault();
+  
+    let searchInputVal = document.querySelector('#search-input').value;
+    
+  
+    if (!searchInputVal) {
+      console.error('You need a search input value!');
+      return;
+    }
+  
+    searchApi(searchInputVal);
+  }
+  
+  searchFormEl.addEventListener('submit', handleSearchFormSubmit);
