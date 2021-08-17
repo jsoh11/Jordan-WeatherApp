@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header class="header">
-        <h1>Weather Dashboard</h1>
-    </header>
 
-    <section class="d-flex ">
-        <div class="card">
-            <h3 class="card-header text-uppercase">Search By city</h3>
-            <form id="user-form" class="card-body">
-              <label class="form-label" for="city">City</label>
-              <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-              <button type="submit" class="btn">Get Weather</button>
-            </form>
-          </div>
-    
-        <div class="jumbotron col-10">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
-          </div>
-    </section>
-<section>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <section class="d-flex ">
+    <div class="card">
+      <h3 class="card-header text-uppercase">Search By city</h3>
+      <form id="search-city" class="card-body">
+        <label class="form-label" for="city">City</label>
+        <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+        <button type="submit" class="btn">Get Weather</button>
+      </form>
+    </div>
+
+    <div class="jumbotron col-10">
+      <h1 class="date-main">Today's date:</h1>
+      <p class="temp-main">Temp:</p>
+      <p class="wind-main">Wind:</p>
+      <p class="hum-main">Humidity</p>
+    </div>
+  </section>
+  <section>
     <h2> 5-day Forecast</h2>
     <div class="card-deck">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-date">Card title</h5>
+          <p class="temp-1">Temp:</p>
+          <p class="wind-1">Wind:</p>
+          <p class="hum-1">Humidity:</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-date">Card title</h5>
+          <p class="temp-2">Temp:</p>
+          <p class="wind-2">Wind:</p>
+          <p class="hum-2">Humidity:</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-        <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text"></p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text"></p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text"></p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-date">Card title</h5>
+          <p class="temp-3">Temp:</p>
+          <p class="wind-3">Wind:</p>
+          <p class="hum-3">Humidity</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-date">Card title</h5>
+          <p class="temp-4">Temp:</p>
+          <p class="wind-4">Wind:</p>
+          <p class="hum-4">Humidity:</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-date">Card title</h5>
+          <p class="temp-5">Temp:</p>
+          <p class="wind-5">Wind:</p>
+          <p class="hum-5">Humidity:</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-    <script src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
